@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>API: Погода + Moodle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Демонстрація API</h1>
+
+    <section>
+      <h2>Погода в місті</h2>
+      <input type="text" id="city" placeholder="Введіть місто">
+      <button onclick="getWeather()">Дізнатись погоду</button>
+      <div id="weatherResult"></div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Дані Moodle</h2>
+      <input type="text" id="login" placeholder="Введіть логін Moodle">
+      <button onclick="checkLogin()">Перевірити</button>
+      <div id="loginResult"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
